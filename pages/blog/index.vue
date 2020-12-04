@@ -67,7 +67,17 @@ export default {
   components: { Sidebar },
   data: () => ({}),
   head() {
-    return this.$nuxtI18nSeo()
+    return {
+      title: 'Personal blog',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'My personal blog (Dilovar Azimov)',
+        },
+      ],
+    }
   },
 }
 </script>

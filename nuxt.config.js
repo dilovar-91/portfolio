@@ -7,9 +7,15 @@ export default {
     port: 3200, // default: 3000
   },
 
+  loadingIndicator: {
+    name: 'circle',
+    color: '#3B8070',
+    background: 'white',
+  },
+
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    titleTemplate: '%s - portfolio',
+    titleTemplate: '%s - Azimoff.me',
     title: 'portfolio',
     meta: [
       { charset: 'utf-8' },

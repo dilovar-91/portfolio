@@ -7,3 +7,10 @@
     </v-main>
   </v-app>
 </template>
+<script>
+export default {
+  head() {
+    return this.$nuxtI18nSeo()
+  },
+}
+</script>

@@ -198,7 +198,17 @@ export default {
     },
   },
   head() {
-    return this.$nuxtI18nSeo()
+    return {
+      title: this.$t('site_title'),
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$t('site_description'),
+        },
+      ],
+    }
   },
 }
 </script>
@@ -211,7 +221,9 @@ export default {
     "portfolio": "Portfolio",
     "hire_me": "Hire Me",
     "about_me_full": "Hello. My name is Dilovar Azimov. I am a Full Stack developer at Pilot Auto(https://pilot-auto77.ru). I have 2 years of experience in the IT industry. My tech stack is PHP (Laravel), Vue.Js, Nuxt.Js, Mysql, Nginx, Vuetify etc.",
-    "github_activity": "Contribution activity in Github"
+    "github_activity": "Contribution activity in Github",
+    "site_title": "Dilovar Azimov's Site",
+    "site_description": "Some information about my work activities, projects and tech stack that I use."
   },
   "ru": {
     "about_me": "Обо мне",
@@ -220,7 +232,9 @@ export default {
     "portfolio": "Портфолио",
     "hire_me": "Наймите меня",
     "about_me_full": "Здравствуйте. Меня зовут Диловар Азимов. Я являюсь Full-Stack разработчиком  в автосалоне Пилот Авто (https://pilot-auto77.ru). Имею 2-летний опыт работы в ИТ-индустрии. Стек технологии которые я пользую: PHP (Laravel), Vue.Js, Nuxt.Js, Mysql, Nginx, Vuetify и т. д.",
-    "github_activity": "Активность в Github"
+    "github_activity": "Активность в Github",
+    "site_title": "Сайт Азимова Диловара",
+    "site_description": "Некоторые информации о моей рабочей деятельности, проектах и стек технологии которые я использую."
   },
   "tj": {
     "about_me": "Оиди ман",
@@ -229,7 +243,9 @@ export default {
     "portfolio": "Портфолио",
     "hire_me": "Маро киро кунед",
     "about_me_full": "Салом. Номи ман Диловар Азимов. Айни хол ба сифати Full-Stack барномасоз кор ва фаъолият менамоям. Таҷрибаи кории ман зиёда аз 2 сол мебошад. Банда хатмкардаи ДПДТТ ба номи М.Осими буда чунин технологияхоро истифода мебарам: PHP (Laravel), Vue.Js, Nuxt.Js, Mysql, Nginx, Vuetify ва ғайра.",
-    "github_activity": "Фаъолноки дар Github"
+    "github_activity": "Фаъолноки дар Github",
+    "site_title": "Сомонаи Азимов Диловар",
+    "ssite_description": "Маълумотҳо дар бораи фаъолияти кории ман, лоиҳаҳо ва технологияҳое, ки ман истифода мебарам."
   },
   "de": {
     "about_me": "Über mich",
@@ -238,7 +254,9 @@ export default {
     "portfolio": "Portefeuille",
     "hire_me": "Stellt mich ein",
     "about_me_full": "Hallo. Ich heiße Dilovar Azimov. Ich bin ein Full Stack-Entwickler bei Pilot Auto. Ich habe 2 Jahre Erfahrung in der IT-Branche. Mein Technologie-Stack ist PHP (Laravel), Vue.Js, Nuxt.Js, Mysql, Nginx, Vuetify usw.",
-    "github_activity": "Beitragsaktivität in Github"
+    "github_activity": "Beitragsaktivität in Github",
+    "site_title": "die Website von Dilovar Azimov",
+    "site_description": "Einige Informationen zu meinen Arbeitsaktivitäten, Projekten und zum Technologie-Stack, die ich verwende."
   }
 }
 </i18n>
