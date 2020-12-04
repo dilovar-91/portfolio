@@ -3,10 +3,10 @@ module.exports = {
     {
       name: 'azimoff-me',
       port: 3200,
-      exec_mode: 'cluster',
+      exec_mode: 'cluster_mode',
       instances: '1', // Or a number of instances
       script: './node_modules/nuxt/bin/nuxt.js',
-      args: 'start',
+      args: 'pm',
     },
   ],
 }
