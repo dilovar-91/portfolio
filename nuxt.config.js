@@ -4,7 +4,7 @@ export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
   server: {
-    port: 1420, // default: 3000
+    port: 3200, // default: 3000
   },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
