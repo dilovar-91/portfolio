@@ -7,6 +7,11 @@ export default {
     port: 3200, // default: 3000
   },
 
+  loading: {
+    color: 'blue',
+    height: '5px',
+  },
+
   loadingIndicator: {
     name: 'circle',
     color: '#3B8070',

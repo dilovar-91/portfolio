@@ -42,8 +42,8 @@
 .gradient-dark {
   background: linear-gradient(
     45deg,
-    rgba(10, 10, 10, 0.651),
-    rgba(10, 10, 10, 0.651)
+    rgba(10, 10, 10, 0.342),
+    rgba(10, 10, 10, 0.342)
   );
 }
 </style>
